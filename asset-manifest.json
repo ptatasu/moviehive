@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/moviehive/static/css/main.4e0d91f8.css",
-    "main.js": "/moviehive/static/js/main.c0e12b40.js",
+    "main.js": "/moviehive/static/js/main.639a4481.js",
     "static/media/github.svg": "/moviehive/static/media/github.e2286a700859aa1d881327a699764d80.svg",
     "static/media/twitter.svg": "/moviehive/static/media/twitter.03d39d0d67840ec2a44c589b79336dfa.svg",
     "index.html": "/moviehive/index.html",
@@ -12,10 +12,10 @@
     "static/media/arrow_back.svg": "/moviehive/static/media/arrow_back.79cf7cc06ca32f6003deca6af53dc0ae.svg",
     "static/media/chevron-right.svg": "/moviehive/static/media/chevron-right.bcfc73b9184c1cfc410118f2a133c10d.svg",
     "main.4e0d91f8.css.map": "/moviehive/static/css/main.4e0d91f8.css.map",
-    "main.c0e12b40.js.map": "/moviehive/static/js/main.c0e12b40.js.map"
+    "main.639a4481.js.map": "/moviehive/static/js/main.639a4481.js.map"
   },
   "entrypoints": [
     "static/css/main.4e0d91f8.css",
-    "static/js/main.c0e12b40.js"
+    "static/js/main.639a4481.js"
   ]
 }
