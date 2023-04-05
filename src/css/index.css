@@ -1,0 +1,363 @@
+:root {
+  --black: #04040C;
+  --blue: #041623;
+  --gray: #AABFC0;
+  --brown: #444C4F;
+  --yellow: #C2BC4F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--gray);
+  font-family: "Barlow", monospace;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  background-color: var(--yellow);
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .logo img {
+  height: 3.125rem;
+  border-radius: 100%;
+}
+.navbar .searchBar {
+  display: flex;
+  justify-content: center;
+}
+.navbar .searchBar .search {
+  outline: none;
+  border: none;
+  background-color: #f8f8f8;
+  color: var(--brown);
+  padding: 0.5rem 0.5rem;
+  width: 15.625rem;
+}
+.navbar .searchResults {
+  position: absolute;
+  z-index: 3000;
+  top: 55px;
+  right: 245px;
+  overflow: scroll;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 15.625rem;
+  max-height: 500px;
+}
+.navbar .searchResults .searchItems:not(:first-child) {
+  border-top: 1px solid var(--brown);
+}
+.navbar .searchResults .searchItems {
+  background-color: var(--black);
+  cursor: pointer;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  min-height: 4.125rem;
+  max-height: 158px;
+  padding: 0.5rem 0.5rem;
+}
+.navbar .searchResults .searchItems .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin: 1.25rem 0 0 6.35rem;
+}
+
+.loading {
+  position: relative;
+  background-color: var(--black);
+}
+
+.dropDown {
+  margin: 1.25rem 0 0 6.25rem;
+  max-width: 18.75rem;
+  display: flex;
+  font-size: 1rem;
+}
+.dropDown .dropDownMenu form select {
+  margin: 0 1.875rem;
+  padding: 0 1.875rem;
+  background-color: var(--black);
+  border-radius: 1vh;
+  outline: none;
+  font-size-adjust: 1rem;
+}
+
+.container {
+  width: 80%;
+  margin: 3.125rem auto;
+}
+.container .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.container .grid .gridItems {
+  opacity: 0.8;
+  transform: scale(110%);
+  margin-bottom: 3.25rem;
+}
+.container .grid .gridItems .title {
+  text-align: center;
+}
+.container .grid .gridItems:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.container .grid .moviePoster {
+  border-radius: 0.625rem;
+  height: 22.6875rem;
+  width: 15rem;
+}
+.container .noImg {
+  border: 1px solid var(--gray);
+  border-radius: 0.625rem;
+  height: 22.6875rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .seeMore {
+  position: absolute;
+  bottom: 3.125rem;
+  left: 1.25rem;
+  background-color: var(--yellow);
+  padding: 0.625rem 3.125rem 0.625rem 1.25rem;
+  color: var(--brown);
+  opacity: 0.6;
+}
+.container .seeMore .chev {
+  width: 18%;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.625rem;
+}
+.container .seeMore:hover {
+  opacity: 1;
+  transform: scale(110%);
+}
+
+.scale-up-center {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.gradient {
+  margin-top: 0.625rem;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  padding-bottom: 56.25%;
+}
+
+.backdrop {
+  position: absolute;
+  top: 5.525rem;
+  width: 100%;
+  z-index: -1;
+}
+
+.movieContainer {
+  position: absolute;
+  top: 28.125rem;
+  left: 1.25rem;
+  width: 60%;
+}
+.movieContainer .mainTitle {
+  position: relative;
+  left: -5rem;
+  top: -4.75rem;
+}
+.movieContainer .overview {
+  position: relative;
+  left: 1.25rem;
+  top: 1.875rem;
+}
+.movieContainer .release {
+  position: relative;
+  left: 1.25rem;
+  top: 3rem;
+}
+.movieContainer .status {
+  position: relative;
+  left: 1.25rem;
+  top: 3.125rem;
+}
+.movieContainer .genres {
+  position: relative;
+  left: 1.25rem;
+  top: 3rem;
+}
+
+.btn {
+  position: absolute;
+  background-color: var(--yellow);
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  color: var(--brown);
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(110%);
+}
+
+.trailer {
+  top: 30rem;
+  right: 12.5rem;
+}
+
+.back {
+  top: 9.375rem;
+  left: 3.75rem;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.home {
+  top: 9.375rem;
+  right: 3.75rem;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.no-img {
+  font-size: xx-large;
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  z-index: 2000;
+  top: 100px;
+  right: 100px;
+}
+.close :hover {
+  border-radius: 5px;
+  background-color: red;
+  transform: scale(110%);
+  opacity: 1;
+}
+
+.wrapper {
+  overflow: hidden;
+  max-width: 100%;
+}
+.wrapper .youtube-container {
+  z-index: 1;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  width: 300%; /* enlarge beyond browser width */
+  left: -100%; /* center */
+}
+.wrapper .youtube-container .trailer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.recommendation {
+  transition: all 0.3s ease;
+  margin: 5rem 0.625rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.recommendation .noRecomm {
+  position: relative;
+  margin-bottom: 1.25rem;
+  left: 6.25rem;
+}
+.recommendation .RecomTitle {
+  position: absolute;
+  bottom: 4.375rem;
+  left: 1.25rem;
+  font-size: larger;
+}
+
+.gridItems {
+  opacity: 0.8;
+  margin-bottom: 1.25rem;
+}
+.gridItems .title {
+  text-align: center;
+}
+
+.gridItems:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.moviePoster {
+  border-radius: 0.625rem;
+  height: 22.6875;
+  width: 15rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--yellow);
+  height: 9.375rem;
+}
+.footer .tag {
+  color: var(--brown);
+  text-align: center;
+}
+.footer .brands {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  gap: 2rem;
+}
+.footer .brands .title {
+  color: var(--brown);
+  font-weight: 800;
+}
+.footer .brands .brandLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .copy {
+  color: var(--brown);
+}/*# sourceMappingURL=index.css.map */
