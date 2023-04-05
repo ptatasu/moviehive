@@ -42,7 +42,7 @@
     <a href="https://github.com/ptatasu/moviehive"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ptatasu/moviehive">View Demo</a>
+    <a href="https://ptatasu.github.io/moviehive/">View Demo</a>
     ·
     <a href="https://github.com/ptatasu/moviehive/issues">Report Bug</a>
     ·
@@ -60,7 +60,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="#note">Note</a></li>
+        <li><a href="#note">Notes</a></li>
       </ul>
     </li>
     <li>
@@ -95,9 +95,11 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Note
+### Notes
 
-This project is not yet Responsive Sorry for the trouble
+* This project is not yet Responsive Sorry for the trouble.
+* Some of the video are just Promotional or Related videos and not the Trailer.
+* The trailers and videos are being fetched on [YouTube](https://www.youtube.com/), some videos might not be available because of YouTube's region restriction.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
